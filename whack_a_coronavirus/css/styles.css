@@ -1,0 +1,120 @@
+/* Import Google Font - Press Start 2P */
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
+.col-sm-12 {
+    font-family: 'Press Start 2P';
+}
+
+/* css untuk tampilan <768px */
+#canvas-complex {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+a.kembali {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+}
+
+h1, h2, h3 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    z-index: 1;
+}
+
+a.kirim-skor {
+    position: absolute;
+    left: 94.5%;
+    top: 10px;
+    color: white;
+}
+
+button {
+    position: absolute;
+    left: 45.5%;
+    z-index: 1;
+}
+
+button.mulai {
+    background-color: #64a19d;
+    border-color: #64a19d;
+}
+
+button.mulai:hover {
+    background-color: #50817e;
+    border-color: #50817e;
+}
+
+.container {
+    position: absolute;
+    width: 800px;
+    left: 29%;
+    top: 30%;
+    cursor: url(../img/palu1.png), auto;
+}
+
+.container:active {
+    cursor: url(../img/palu2.png), auto;
+}
+
+.manusia {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.manusia::after {
+    content: '';
+    display: block;
+    width: 75%;
+    height: 100%;
+    background: url(../img/human.png) bottom center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: -5px;
+}
+
+.virus {
+    width: 100%;
+    height: 100%;
+    background: url(../img/covid19.png) bottom center no-repeat;
+    background-size: 50%;
+    position: absolute;
+    top: 150px;
+    transition: top 0.3s;
+    z-index: 1;
+ }
+
+.manusia.muncul .virus {
+    top: -15px;
+}
+
+/* CSS Untuk Form */
+#submit {
+    left: 80%;
+    top: 103%;
+    background-color: #64a19d;
+    border-color: #64a19d;
+}
+
+#submit:hover {
+    background-color: #50817e;
+    border-color: #50817e;
+}
+
+.modal-footer {
+    height: 50px;
+}
